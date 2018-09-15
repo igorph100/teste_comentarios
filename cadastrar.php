@@ -5,13 +5,14 @@ $nome = $_POST['nome'];
 $login = $_POST['login'];
 $senha = $_POST['senha'];
 $sexo = $_POST['sexo'];
+$email = $_POST['email'];
 if ($sexo === 'm'){
     $url_imagem = 'img/user-m.png';
 }else{
     $url_imagem = 'img/user-f.png';
 }
 
-$sql_cad = "insert into u (login , senha , nome , url_imagem) values ('$login' , '$senha' , '$nome' , '$url_imagem')";
+$sql_cad = "insert into u (login , senha , nome , url_imagem, email) values ('$login' , '$senha' , '$nome' , '$url_imagem' , '$email')";
 $query_cad= $conn->query($sql_cad);
 
 if($query_cad->rowCount() > 0){

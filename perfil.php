@@ -15,11 +15,14 @@ $perfil = $query_perfil->fetchAll(PDO::FETCH_ASSOC);
 
 $nome = $perfil[0]['nome'];
 $img = $perfil[0]['url_imagem'];
+
+$email = $perfil[0]['email'];
+
 echo "<center>
         <div id='info'>
             <img src='$img'><br>
             <span>Nome: $nome</span><br>
-            <span>Email: $nome@mail.com</span><br>
+            <span>Email: $email</span><br>
             <span>Cidade: Barueri</span>
         </div></center>";
 

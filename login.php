@@ -17,5 +17,6 @@ and open the template in the editor.
             <input type="submit" value="Entrar">
         </form>
         <a href="cadastro.php">Cadastre-se</a>
+        <a href="recuperar_senha.php">Recuperar senha</a>
     </body>
 </html>

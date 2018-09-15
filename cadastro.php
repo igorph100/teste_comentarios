@@ -19,6 +19,7 @@ and open the template in the editor.
                 <option value="m">Masculino</option>
                 <option value="f">Feminino</option>
             </select><br>
+            Email: <input type="email" name="email"><br>
             <input type="submit" value="Cadastrar">
         </form>
 
